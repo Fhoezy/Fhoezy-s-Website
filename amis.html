@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Les Amis de Fhoezy</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Les Amis de Fhoezy</h1>
+
+<h2>Feu Follets</h2>
+<p>Petites flammes dansantes, lila ou blanche, changeant d’intensité selon l’humeur de Fhoezy.</p>
+<div id="feufollet1" class="hidden">
+<p>Feu Follet I – scintille fortement lorsqu’elle est joyeuse. Révèle un fragment de souvenir.</p>
+</div>
+<div id="feufollet2" class="hidden">
+<p>Feu Follet II – s’éteint doucement quand Fhoezy est triste. Guide vers un indice caché.</p>
+</div>
+<button onclick="revealFragment('feufollet1')">Allumer Feu Follet I</button>
+<button onclick="revealFragment('feufollet2')">Allumer Feu Follet II</button>
+
+<hr>
+
+<h2>Ombres du Passé</h2>
+<p>Silhouettes floues, parfois visibles dans les fenêtres ou reflets.</p>
+<div id="ombre1" class="hidden">
+<p>Ombre I – aide à retrouver un fragment oublié.</p>
+</div>
+<div id="ombre2" class="hidden">
+<p>Ombre II – débloque un passage caché si le chat interagit correctement.</p>
+</div>
+<button onclick="revealFragment('ombre1')">Observer Ombre I</button>
+<button onclick="revealFragment('ombre2')">Observer Ombre II</button>
+
+<hr>
+
+<h2>Voix de la Bibliothèque</h2>
+<p>Livres ouverts flottants, pages tournantes seules, offrant des conseils cryptiques.</p>
+<div id="voix1" class="hidden">
+<p>Voix I – murmure des indices sur les fragments cachés.</p>
+</div>
+<div id="voix2" class="hidden">
+<p>Voix II – guide vers une pièce secrète du manoir.</p>
+</div>
+<button onclick="revealFragment('voix1')">Écouter Voix I</button>
+<button onclick="revealFragment('voix2')">Écouter Voix II</button>
+
+<hr>
+
+<h2>Tableaux des Amis Streameurs</h2>
+<p>Tableaux d’huile représentant d’autres streameurs capturés dans des instants précis.</p>
+<div id="lumi" class="hidden">
+<p>Lumi – concentrée sur un jeu, inspire la détermination.</p>
+</div>
+<div id="orion" class="hidden">
+<p>Orion – surpris, guide vers la timeline secrète.</p>
+</div>
+<div id="nea" class="hidden">
+<p>Néa – bouge quand la musique joue, révèle des fragments liés aux émotions de Fhoezy.</p>
+</div>
+<button onclick="revealFragment('lumi')">Observer Lumi</button>
+<button onclick="revealFragment('orion')">Observer Orion</button>
+<button onclick="revealFragment('nea')">Observer Néa</button>
+
+<footer>Chaque ami a un secret. Certains ne se dévoilent que si vous êtes attentifs.</footer>
+</div>
+</body>
+</html>
