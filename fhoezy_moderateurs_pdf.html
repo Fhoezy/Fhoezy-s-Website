@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fhoezy – Tableau Modérateur</title>
+<style>
+body { background: #0b0c10; color: #d8d8e8; font-family: Georgia, serif; padding:30px; }
+h1,h2 { color: #b8a1ff; }
+table { width:100%; border-collapse: collapse; margin-top:20px; }
+th, td { border:1px solid #b8a1ff; padding:8px; text-align:left; }
+th { background-color:#1c1e24; }
+button { padding:5px 10px; margin:2px; background:#2c2e38; color:#b8a1ff; border:1px solid #b8a1ff; cursor:pointer; }
+button:hover { background:#3c3e48; }
+.checkbox { width:20px; height:20px; }
+.glitch { color:#d8d8e8; text-shadow: 1px 0 #b8a1ff, -1px 0 #b8a1ff; }
+.fade { opacity:0.7; font-style:italic; }
+</style>
+<script>
+function toggleCheck(id){
+    var c=document.getElementById(id);
+    c.checked = !c.checked;
+}
+</script>
+</head>
+<body>
+
+<h1>Fhoezy – Tableau de Contrôle Modérateur</h1>
+<p>Ce document est destiné aux modérateurs pour suivre et gérer les fragments, amis et événements pendant le stream ARG de Fhoezy.</p>
+
+<table>
+<tr>
+<th>Élément</th>
+<th>Description</th>
+<th>Commandes</th>
+<th>✓</th>
+</tr>
+
+<tr>
+<td>Fragment I</td>
+<td>La Peur – “Je n’avais pas peur de mourir…”</td>
+<td><button onclick="toggleCheck('chk1')">Débloquer</button></td>
+<td><input type="checkbox" id="chk1" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Fragment II</td>
+<td>Isolement – “Je fermais les rideaux…”</td>
+<td><button onclick="toggleCheck('chk2')">Débloquer</button></td>
+<td><input type="checkbox" id="chk2" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Fragment III</td>
+<td>Fatigue – “Je voulais juste finir la partie.”</td>
+<td><button onclick="toggleCheck('chk3')">Débloquer</button></td>
+<td><input type="checkbox" id="chk3" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Feu Follet I</td>
+<td>Scintille et révèle un fragment</td>
+<td><button onclick="toggleCheck('chk4')">Activer</button></td>
+<td><input type="checkbox" id="chk4" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Feu Follet II</td>
+<td>S’éteint doucement et guide vers indice</td>
+<td><button onclick="toggleCheck('chk5')">Activer</button></td>
+<td><input type="checkbox" id="chk5" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Ombre I</td>
+<td>Aide à retrouver un fragment oublié</td>
+<td><button onclick="toggleCheck('chk6')">Observer</button></td>
+<td><input type="checkbox" id="chk6" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Ombre II</td>
+<td>Débloque un passage secret</td>
+<td><button onclick="toggleCheck('chk7')">Observer</button></td>
+<td><input type="checkbox" id="chk7" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Voix I</td>
+<td>Murmure des indices sur fragments cachés</td>
+<td><button onclick="toggleCheck('chk8')">Écouter</button></td>
+<td><input type="checkbox" id="chk8" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Voix II</td>
+<td>Guide vers une pièce secrète</td>
+<td><button onclick="toggleCheck('chk9')">Écouter</button></td>
+<td><input type="checkbox" id="chk9" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Lumi</td>
+<td>Tableau – inspire détermination</td>
+<td><button onclick="toggleCheck('chk10')">Observer</button></td>
+<td><input type="checkbox" id="chk10" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Orion</td>
+<td>Tableau – guide vers timeline secrète</td>
+<td><button onclick="toggleCheck('chk11')">Observer</button></td>
+<td><input type="checkbox" id="chk11" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Néa</td>
+<td>Tableau – bouge avec la musique, révèle fragments</td>
+<td><button onclick="toggleCheck('chk12')">Observer</button></td>
+<td><input type="checkbox" id="chk12" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Logs OBS</td>
+<td>Faux log 03:17 pour suspense</td>
+<td><button onclick="toggleCheck('chk13')">Afficher</button></td>
+<td><input type="checkbox" id="chk13" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Erreur Windows</td>
+<td>Message 0x0000317 pour RP</td>
+<td><button onclick="toggleCheck('chk14')">Afficher</button></td>
+<td><input type="checkbox" id="chk14" class="checkbox" checked></td>
+</tr>
+
+<tr>
+<td>Entrée Secrète 03:17</td>
+<td>Corps lâche, timeline finale</td>
+<td><button onclick="toggleCheck('chk15')">Déclencher</button></td>
+<td><input type="checkbox" id="chk15" class="checkbox" checked></td>
+</tr>
+
+</table>
+
+<footer style="margin-top:40px;">Fhoezy – Tableau Modérateur – Tous droits réservés.</footer>
+
+</body>
+</html>
