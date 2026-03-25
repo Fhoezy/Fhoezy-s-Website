@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fragments de Souvenirs</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Fragments</h1>
+
+<div id="fragment1" class="hidden">
+<p>Fragment I – La Peur : Je n’avais pas peur de mourir. J’avais peur d’être vue.</p>
+</div>
+
+<div id="fragment2" class="hidden">
+<p>Fragment II – L’Isolement : Je fermais les rideaux pour que personne ne remarque que je restais.</p>
+</div>
+
+<div id="fragment3" class="hidden">
+<p>Fragment III – La Fatigue : Je voulais juste finir la partie.</p>
+</div>
+
+<div id="timeline" class="hidden">
+<h2>Timeline Secrète</h2>
+<p>21:00 – Lancement du jeu<br>
+22:00 – Fatigue visible<br>
+23:00 – Messages rares<br>
+00:00 – Rideaux fermés<br>
+01:00 – Respiration irrégulière<br>
+02:00 – Pose de la manette<br>
+03:00 – Silence total<br>
+03:17 – Corps lâche</p>
+</div>
+
+<button onclick="revealFragment('fragment1')">Débloquer Fragment I</button>
+<button onclick="revealFragment('fragment2')">Débloquer Fragment II</button>
+<button onclick="revealFragment('fragment3')">Débloquer Fragment III</button>
+<button onclick="revealFragment('timeline')">Voir Timeline Secrète</button>
+
+<p class="fade">Certains fragments ne se révèlent qu’aux plus attentifs.</p>
+<footer>Seuls les plus attentifs peuvent tout voir.</footer>
+</div>
+</body>
+</html>

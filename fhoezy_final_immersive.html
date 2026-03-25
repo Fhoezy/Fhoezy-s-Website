@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<title>Fhoezy – Le Manoir Immersif</title>
+<style>
+body { background: #0b0c10; color: #d8d8e8; font-family: Georgia, serif; margin:0; padding:30px; }
+h1,h2,h3 { color: #b8a1ff; }
+.page { page-break-after: always; padding: 20px; }
+.hidden { display:none; background: #0b0c10; color: #0b0c10; padding: 10px; }
+.glitch { color:#d8d8e8; text-shadow: 1px 0 #b8a1ff, -1px 0 #b8a1ff; }
+.fade { opacity:0.7; font-style:italic; }
+button { margin-top:5px; padding:5px 10px; background:#1c1e24; color:#b8a1ff; border:1px solid #b8a1ff; cursor:pointer; }
+button:hover { background:#2c2e38; }
+footer { font-size:0.8em; opacity:0.4; margin-top:40px; }
+</style>
+<script>
+function revealFragment(id){ 
+    var e=document.getElementById(id);
+    if(e) e.classList.remove('hidden');
+}
+function autoReveal(){ 
+    var now = new Date();
+    if(now.getHours()===3 && now.getMinutes()===17){
+        revealFragment('timeline');
+        revealFragment('secretEntry');
+    }
+}
+setInterval(autoReveal,10000);
+</script>
+</head>
+<body>
+
+<div class="page">
+<h1>Fhoezy – Le Manoir Immersif</h1>
+<p>Explorez le manoir et découvrez les secrets cachés. Les amis de Fhoezy réagiront selon vos interactions.</p>
+</div>
+
+<div class="page">
+<h2>Journal et Pièces</h2>
+<p><strong>Hall d'Éveil :</strong> Lustre brisé, escaliers infinis, le silence est palpable.</p>
+<p><strong>Salle aux Écrans Éteints :</strong> Certains écrans montrent Fhoezy répétant des actions.</p>
+<p><strong>Chambre sans Lit :</strong> Pas de lit ni de miroir. Le corps est absent.</p>
+<p><strong>Bibliothèque :</strong> Livres flottants et pages tournantes seules. Certaines voix chuchotent des indices.</p>
+</div>
+
+<div class="page">
+<h2>Fragments de Souvenirs</h2>
+<div id="fragment1" class="hidden"><p>Fragment I – La Peur : Je n’avais pas peur de mourir. J’avais peur d’être vue.</p></div>
+<div id="fragment2" class="hidden"><p>Fragment II – L’Isolement : Je fermais les rideaux pour que personne ne remarque que je restais.</p></div>
+<div id="fragment3" class="hidden"><p>Fragment III – La Fatigue : Je voulais juste finir la partie.</p></div>
+<div id="timeline" class="hidden"><p>21:00 – Lancement du jeu<br>22:00 – Fatigue visible<br>23:00 – Messages rares<br>00:00 – Rideaux fermés<br>01:00 – Respiration irrégulière<br>02:00 – Pose de la manette<br>03:00 – Silence total<br>03:17 – Corps lâche</p></div>
+
+<button onclick="revealFragment('fragment1')">Allumer Fragment I</button>
+<button onclick="revealFragment('fragment2')">Allumer Fragment II</button>
+<button onclick="revealFragment('fragment3')">Allumer Fragment III</button>
+<button onclick="revealFragment('timeline')">Voir Timeline Secrète</button>
+</div>
+
+<div class="page">
+<h2>Amis de Fhoezy – Interactions RP</h2>
+
+<h3>Feu Follets</h3>
+<div id="feufollet1" class="hidden"><p class="glitch">Feu Follet I – scintille, révèle un fragment de souvenir.</p></div>
+<div id="feufollet2" class="hidden"><p class="glitch">Feu Follet II – s’éteint doucement, guide vers un indice caché.</p></div>
+<button onclick="revealFragment('feufollet1')">Allumer Feu Follet I</button>
+<button onclick="revealFragment('feufollet2')">Allumer Feu Follet II</button>
+
+<h3>Ombres du Passé</h3>
+<div id="ombre1" class="hidden"><p>Ombre I – aide à retrouver un fragment oublié.</p></div>
+<div id="ombre2" class="hidden"><p>Ombre II – débloque un passage secret selon vos choix.</p></div>
+<button onclick="revealFragment('ombre1')">Observer Ombre I</button>
+<button onclick="revealFragment('ombre2')">Observer Ombre II</button>
+
+<h3>Voix de la Bibliothèque</h3>
+<div id="voix1" class="hidden"><p>Voix I – murmure des indices sur fragments cachés.</p></div>
+<div id="voix2" class="hidden"><p>Voix II – guide vers une pièce secrète du manoir.</p></div>
+<button onclick="revealFragment('voix1')">Écouter Voix I</button>
+<button onclick="revealFragment('voix2')">Écouter Voix II</button>
+
+<h3>Tableaux des Amis Streameurs</h3>
+<div id="lumi" class="hidden"><p>Lumi – concentrée sur un jeu, inspire la détermination.</p></div>
+<div id="orion" class="hidden"><p>Orion – surpris, guide vers la timeline secrète.</p></div>
+<div id="nea" class="hidden"><p>Néa – bouge quand la musique joue, révèle fragments liés aux émotions de Fhoezy.</p></div>
+<button onclick="revealFragment('lumi')">Observer Lumi</button>
+<button onclick="revealFragment('orion')">Observer Orion</button>
+<button onclick="revealFragment('nea')">Observer Néa</button>
+</div>
+
+<div class="page">
+<h2>ARG et Logs</h2>
+<div id="log1" class="hidden"><pre>[03:16:58] OBS Studio - Démarrage du rendu
+[03:16:59] Source chargée : Jeu
+[03:17:00] AVERTISSEMENT : délai de réponse anormal
+[03:17:01] ERREUR : la source ne répond pas
+[03:17:01] Cause : inconnue
+[03:17:02] Reprise du rendu
+[03:17:02] État du flux : stable</pre></div>
+
+<div id="windowsError" class="hidden"><p>Windows : Une erreur inattendue s’est produite. Code : 0x0000317</p></div>
+<div id="secretEntry" class="hidden"><p class="glitch">03:17 – Le manoir devient plus calme, la respiration s’arrête, et la source OBS lâche.</p></div>
+
+<button onclick="revealFragment('log1')">Afficher Log OBS</button>
+<button onclick="revealFragment('windowsError')">Afficher Message Windows</button>
+<button onclick="revealFragment('secretEntry')">Afficher Entrée 03:17</button>
+</div>
+
+<footer class="page">Fhoezy – Le Manoir Immersif – Tous droits réservés.</footer>
+
+</body>
+</html>

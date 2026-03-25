@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>ARG – Logs et Messages</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>ARG – Logs et Messages</h1>
+
+<div id="log1" class="hidden">
+<pre>
+[03:16:58] OBS Studio - Démarrage du rendu
+[03:16:59] Source chargée : Jeu
+[03:17:00] AVERTISSEMENT : délai de réponse anormal
+[03:17:01] ERREUR : la source ne répond pas
+[03:17:01] Cause : inconnue
+[03:17:02] Reprise du rendu
+[03:17:02] État du flux : stable
+</pre>
+</div>
+
+<div id="windowsError" class="hidden">
+<p><strong>Windows</strong> : Une erreur inattendue s’est produite.</p>
+<p>L’application a cessé de répondre.</p>
+<p>Code : 0x0000317</p>
+<p>Voulez-vous attendre ou fermer ?</p>
+</div>
+
+<div id="secretEntry" class="hidden">
+<h2>Entrée secrète 03:17</h2>
+<p>Le manoir devient plus calme, la respiration s’arrête, et la source OBS lâche.</p>
+</div>
+
+<button onclick="revealFragment('log1')">Afficher Log OBS</button>
+<button onclick="revealFragment('windowsError')">Afficher Message Windows</button>
+<button onclick="revealFragment('secretEntry')">Afficher Entrée 03:17</button>
+
+<footer>Le manoir garde ses secrets.</footer>
+</div>
+</body>
+</html>

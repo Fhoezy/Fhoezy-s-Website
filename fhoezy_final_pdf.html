@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fhoezy – Bible Narrative Tout-en-un</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+<style>
+.page { page-break-after: always; padding: 20px; }
+.hidden { display:none; background: #0b0c10; color: #0b0c10; padding: 15px; }
+h1, h2 { color: #b8a1ff; }
+button { margin-top:5px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+<h1>Fhoezy – Le Manoir</h1>
+<p>Bienvenue dans la bible narrative complète et interactive de Fhoezy. Explorez le manoir, découvrez les amis et débloquez les secrets.</p>
+</div>
+
+<div class="page">
+<h2>Sommaire</h2>
+<ul>
+<li>Chapitre I – Le Réveil</li>
+<li>Chapitre II – Les Pièces</li>
+<li>Chapitre III – Journal</li>
+<li>Chapitre IV – Fragments et Timeline</li>
+<li>Chapitre V – Amis de Fhoezy</li>
+<li>Chapitre VI – ARG et Logs</li>
+</ul>
+</div>
+
+<!-- Chapitre I -->
+<div class="page">
+<h2>Chapitre I – Le Réveil</h2>
+<p>Fhoezy se réveille dans un manoir silencieux, aux murs recouverts de toiles et de cadres anciens. Elle ne se souvient pas de comment elle est morte, mais le manoir semble l’accueillir.</p>
+</div>
+
+<!-- Chapitre II -->
+<div class="page">
+<h2>Chapitre II – Les Pièces</h2>
+<p><strong>Hall d'Éveil :</strong> Grande pièce vide, lustre brisé, escaliers sans fin.</p>
+<p><strong>Salle aux Écrans Éteints :</strong> Murs d’écrans noirs, certains montrent Fhoezy vivante.</p>
+<p><strong>Chambre sans Lit :</strong> Pas de lit ni de miroir. Le corps est absent.</p>
+<p><strong>Couloir qui Raccourcit :</strong> Courir = retour au début. Avancer calmement = progression.</p>
+<p><strong>Bibliothèque Incomplète :</strong> Livres vides, certains se remplissent via le chat.</p>
+<p><strong>Porte qui n'Existait Pas :</strong> Apparaît seulement entourée. Déclenche la fin collective.</p>
+</div>
+
+<!-- Chapitre III -->
+<div class="page">
+<h2>Chapitre III – Journal</h2>
+<p>Entrée 01 – Le Réveil : Je me suis réveillée dans un manoir silencieux...</p>
+<p>Entrée 02 – Les Jeux : Les écrans fonctionnent encore, le silence recule quand je joue...</p>
+<p>Entrée 03 – Les Feu Follets : Je pensais parler seule, mais ils sont là, ils écoutent...</p>
+<p class="glitch">Entrée 04 – 03:17 : Je n’aime pas cette heure. Le manoir devient trop calme.</p>
+</div>
+
+<!-- Chapitre IV -->
+<div class="page">
+<h2>Chapitre IV – Fragments et Timeline</h2>
+<div id="fragment1" class="hidden">
+<p>Fragment I – La Peur : Je n’avais pas peur de mourir. J’avais peur d’être vue.</p>
+</div>
+<div id="fragment2" class="hidden">
+<p>Fragment II – L’Isolement : Je fermais les rideaux pour que personne ne remarque que je restais.</p>
+</div>
+<div id="fragment3" class="hidden">
+<p>Fragment III – La Fatigue : Je voulais juste finir la partie.</p>
+</div>
+<div id="timeline" class="hidden">
+<p>21:00 – Lancement du jeu<br>
+22:00 – Fatigue visible<br>
+23:00 – Messages rares<br>
+00:00 – Rideaux fermés<br>
+01:00 – Respiration irrégulière<br>
+02:00 – Pose de la manette<br>
+03:00 – Silence total<br>
+03:17 – Corps lâche</p>
+</div>
+<button onclick="revealFragment('fragment1')">Débloquer Fragment I</button>
+<button onclick="revealFragment('fragment2')">Débloquer Fragment II</button>
+<button onclick="revealFragment('fragment3')">Débloquer Fragment III</button>
+<button onclick="revealFragment('timeline')">Voir Timeline Secrète</button>
+</div>
+
+<!-- Chapitre V -->
+<div class="page">
+<h2>Chapitre V – Amis de Fhoezy</h2>
+
+<h3>Feu Follets</h3>
+<div id="feufollet1" class="hidden">
+<p>Feu Follet I – scintille lorsque Fhoezy est joyeuse. Révèle un fragment de souvenir.</p>
+</div>
+<div id="feufollet2" class="hidden">
+<p>Feu Follet II – s’éteint doucement quand Fhoezy est triste. Guide vers un indice caché.</p>
+</div>
+<button onclick="revealFragment('feufollet1')">Allumer Feu Follet I</button>
+<button onclick="revealFragment('feufollet2')">Allumer Feu Follet II</button>
+
+<h3>Ombres du Passé</h3>
+<div id="ombre1" class="hidden">
+<p>Ombre I – aide à retrouver un fragment oublié.</p>
+</div>
+<div id="ombre2" class="hidden">
+<p>Ombre II – débloque un passage caché si le chat interagit correctement.</p>
+</div>
+<button onclick="revealFragment('ombre1')">Observer Ombre I</button>
+<button onclick="revealFragment('ombre2')">Observer Ombre II</button>
+
+<h3>Voix de la Bibliothèque</h3>
+<div id="voix1" class="hidden">
+<p>Voix I – murmure des indices sur les fragments cachés.</p>
+</div>
+<div id="voix2" class="hidden">
+<p>Voix II – guide vers une pièce secrète du manoir.</p>
+</div>
+<button onclick="revealFragment('voix1')">Écouter Voix I</button>
+<button onclick="revealFragment('voix2')">Écouter Voix II</button>
+
+<h3>Tableaux des Amis Streameurs</h3>
+<div id="lumi" class="hidden">
+<p>Lumi – concentrée sur un jeu, inspire la détermination.</p>
+</div>
+<div id="orion" class="hidden">
+<p>Orion – surpris, guide vers la timeline secrète.</p>
+</div>
+<div id="nea" class="hidden">
+<p>Néa – bouge quand la musique joue, révèle des fragments liés aux émotions de Fhoezy.</p>
+</div>
+<button onclick="revealFragment('lumi')">Observer Lumi</button>
+<button onclick="revealFragment('orion')">Observer Orion</button>
+<button onclick="revealFragment('nea')">Observer Néa</button>
+
+</div>
+
+<!-- Chapitre VI -->
+<div class="page">
+<h2>Chapitre VI – ARG et Logs</h2>
+<div id="log1" class="hidden">
+<pre>
+[03:16:58] OBS Studio - Démarrage du rendu
+[03:16:59] Source chargée : Jeu
+[03:17:00] AVERTISSEMENT : délai de réponse anormal
+[03:17:01] ERREUR : la source ne répond pas
+[03:17:01] Cause : inconnue
+[03:17:02] Reprise du rendu
+[03:17:02] État du flux : stable
+</pre>
+</div>
+<div id="windowsError" class="hidden">
+<p>Windows : Une erreur inattendue s’est produite. Code : 0x0000317</p>
+</div>
+<div id="secretEntry" class="hidden">
+<p>03:17 – Le manoir devient plus calme, la respiration s’arrête, et la source OBS lâche.</p>
+</div>
+<button onclick="revealFragment('log1')">Afficher Log OBS</button>
+<button onclick="revealFragment('windowsError')">Afficher Message Windows</button>
+<button onclick="revealFragment('secretEntry')">Afficher Entrée 03:17</button>
+</div>
+
+<footer class="page">Fhoezy – Le Manoir. Tous droits réservés.</footer>
+
+</body>
+</html>

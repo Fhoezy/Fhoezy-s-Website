@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Logs OBS Cachés</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Logs OBS</h1>
+<p class="fade">Seuls les plus attentifs remarqueront ces anomalies.</p>
+
+<pre class="hidden" id="log1">
+[03:16:58] OBS Studio - Démarrage du rendu
+[03:16:59] Source chargée : Jeu
+[03:17:00] AVERTISSEMENT : délai de réponse anormal
+[03:17:01] ERREUR : la source ne répond pas
+[03:17:01] Cause : inconnue
+[03:17:02] Reprise du rendu
+[03:17:02] État du flux : stable
+</pre>
+
+<button onclick="revealFragment('log1')">Découvrir le log</button>
+
+</div>
+</body>
+</html>

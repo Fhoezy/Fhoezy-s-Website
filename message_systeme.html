@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Message Système</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Message Système</h1>
+<p class="fade">Quelque chose cloche avec votre ordinateur…</p>
+
+<div id="windowsError" class="hidden">
+<p><strong>Windows</strong></p>
+<p>Une erreur inattendue s’est produite.</p>
+<p>L’application a cessé de répondre.</p>
+<p>Code : 0x0000317</p>
+<p>Voulez-vous attendre ou fermer ?</p>
+</div>
+
+<button onclick="revealFragment('windowsError')">Afficher le message</button>
+
+</div>
+</body>
+</html>
